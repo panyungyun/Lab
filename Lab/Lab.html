@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About--112306072</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 30px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        textarea {
+            width: calc(100% - 10px);
+            height: 50px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>About--112306072</caption>
+        <tr>
+            <td rowspan="3">
+                <!-- Image and caption spanning three rows -->
+                <img src="./IMG_1233.jpg" alt="Personal Photo" width="50%" height="90px">
+                <p>Personal Photo</p>
+            </td>
+            <td>Name: </td>
+            <td colspan="5">
+                <!-- Text input for Name -->
+                <input type="text" name="name">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender: </td>
+            <td colspan="5">
+                <!-- Radio buttons for Gender -->
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td>County: </td>
+            <td>
+                <!-- Dropdown list for County -->
+                <select name="county">
+                    <option value="taipei">Taipei</option>
+                    <option value="tainan">Tainan</option>
+                    <option value="taichung">Taichung</option>
+                    <option value="taoyuan">Taoyuan</option>
+                </select>
+            </td>
+            <td>Birthday: </td>
+            <td>
+                <!-- Date input for Birthday -->
+                <input type="date" name="birthday">
+            </td>
+       
+            <td>Hobby</td>
+            <td>
+                <!-- Checkboxes for Hobby -->
+                <input type="checkbox" name="hobby" value="swimming"> Swimming
+                <input type="checkbox" name="hobby" value="volleyball"> Volleyball
+                <input type="checkbox" name="hobby" value="movie"> Movie
+                <input type="checkbox" name="hobby" value="game"> Game
+                <input type="checkbox" name="hobby" value="sleep"> Sleep
+            </td>
+        </tr>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <tr>
+        <tr>
+            <td>Skill</td>
+            <td>
+                <!-- Checkboxes for Skills -->
+                <input type="checkbox" name="skill" value="java"> Java
+                <input type="checkbox" name="skill" value="html"> HTML
+                <input type="checkbox" name="skill" value="python"> Python
+                <input type="checkbox" name="skill" value="office"> Microsoft Office
+                <input type="checkbox" name="skill" value="premiere"> Premiere
+            </td>
+        </tr>
+        <tr>
+            <td>Say something</td>
+            <td>
+                <!-- Textarea for user to write something -->
+                <textarea placeholder="Say something here." name="comments"></textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
