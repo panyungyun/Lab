@@ -7,7 +7,7 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 80%;
         }
 
         table, th, td {
@@ -15,8 +15,12 @@
         }
 
         th, td {
-            padding: 30px;
+            padding: 10px;
             text-align: left;
+        }
+
+        td:first-child {
+            width: 20%;
         }
 
         img {
@@ -36,26 +40,27 @@
 <body>
 <form>
     <table>
-        <caption>About--112306072</caption>
         <tr>
-            <td rowspan="3">
+            <td colspan="5">
+                About--112306072   
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
                 <!-- Image and caption spanning three rows -->
                 <img src="./IMG_1233.jpg" alt="Personal Photo" width="50%" height="90px">
                 <p>Personal Photo</p>
             </td>
-            <td>Name: </td>
             <td colspan="5">
+            Name:
                 <!-- Text input for Name -->
                 <input type="text" name="name">
-            </td>
-        </tr>
-        <tr>
-            <td>Gender: </td>
-            <td colspan="5">
+            <p>Gender: 
                 <!-- Radio buttons for Gender -->
                 <input type="radio" name="gender" value="male"> Male
                 <input type="radio" name="gender" value="female"> Female
                 <input type="radio" name="gender" value="other"> Other
+            </p>
             </td>
         </tr>
         <tr>
@@ -74,9 +79,10 @@
                 <!-- Date input for Birthday -->
                 <input type="date" name="birthday">
             </td>
-       
+        </tr>
+        <tr>
             <td>Hobby</td>
-            <td>
+            <td colspan="5">
                 <!-- Checkboxes for Hobby -->
                 <input type="checkbox" name="hobby" value="swimming"> Swimming
                 <input type="checkbox" name="hobby" value="volleyball"> Volleyball
@@ -85,16 +91,16 @@
                 <input type="checkbox" name="hobby" value="sleep"> Sleep
             </td>
         </tr>
-    </tr>
-</table>
-
-<br>
-
-<table>
-    <tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="5">
+                <!-- Text input for Email -->
+                <input type="text" email="email">
+            </td>
+        </tr>
         <tr>
             <td>Skill</td>
-            <td>
+            <td colspan="5">
                 <!-- Checkboxes for Skills -->
                 <input type="checkbox" name="skill" value="java"> Java
                 <input type="checkbox" name="skill" value="html"> HTML
@@ -105,14 +111,18 @@
         </tr>
         <tr>
             <td>Say something</td>
-            <td>
+            <td colspan="5">
                 <!-- Textarea for user to write something -->
                 <textarea placeholder="Say something here." name="comments"></textarea>
             </td>
         </tr>
+        <tr>
+            <td colspan="5">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
     </table>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
 </form>
 </body>
 </html>
